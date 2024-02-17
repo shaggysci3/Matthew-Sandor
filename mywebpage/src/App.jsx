@@ -1,37 +1,61 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+
+import * as React from "react";
+import { useState } from 'react';
+import { createRoot } from "react-dom/client";
+import {
+  createBrowserRouter,
+  RouterProvider
+} from "react-router-dom";
+// import Navbar from "./components/Navbar";
+import { Outlet } from "react-router-dom";
+import "./App.css"
+
+import { useEffect } from "react";
+import ErrorPage from "./routes/ErrorPage";
+import Home from "./routes/Home";
+import Git from "./routes/Git";
+import Navbar from "./components/Navbar";
+import Contact from "./routes/contact";
 
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
+const App = () =>{
+ 
+  return(
     <>
-    
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Navbar/>
+      <Outlet/>
     </>
   )
 }
 
-export default App
+const router = createBrowserRouter([
+  {
+    
+    
+    element: <App/>,
+  errorElement: <ErrorPage/>,
+    children:[
+      {
+        path: "/",
+        element: <Home/>
+      },
+      {
+        path: "/git",
+        element: <Git/>
+      },
+      {
+        path: "/contacts",
+        element: <Contact/>
+      },
+      
+      
+    ]
+  }
+  
+  
+
+]);
+
+createRoot(document.getElementById("root")).render(
+  <RouterProvider router={router} />
+);
