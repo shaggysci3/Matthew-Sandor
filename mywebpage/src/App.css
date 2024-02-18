@@ -33,7 +33,7 @@ body{
 
 
   .Logo{
-   background-image: url('src/assets/pixil-frame-0.png');
+   background-image: url('public/pixil-frame-0.png');
    min-height: 2rem;
    min-width: 1.8rem;
    transition: 300ms;
