@@ -63,7 +63,7 @@ body{
 
 
   .Logo{
-   background-image: url('public/pixil-frame-0.png');
+   background-image: url('https://cdn.pixilart.com/photos/large/f9566e27794bf5f.png');
    min-height: 2rem;
    min-width: 1.8rem;
    transition: 300ms;
