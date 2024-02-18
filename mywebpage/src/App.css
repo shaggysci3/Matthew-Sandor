@@ -3,23 +3,53 @@ body{
 }
 
   .MenuItem{
-    color: #43454d;
+    color: #ffffff;
     text-decoration: none;
-    /* padding: 11px;
-    border-left: 2px solid white;
-    margin-left: 1rem; */
-    transition: 300ms;
+    
+    border-left: 2px solid rgb(165, 101, 17);
+    
+    transition: 400ms;
     display: none;
     font-size: 1rem;
+    border-bottom: 2px solid rgba(85, 179, 90, 0);
+    
+    
     
   }
 
-  /* .MenuItem:hover{
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    box-shadow: 0 0 10px 5px rgba(82, 177, 255, 0.5);
+  .MenuItem:hover{
+    
+    border-radius: 10px 0px 10px 0px;
+    background-color: rgba(0, 255, 64, 0.2);
+    border-bottom: 2px solid rgb(85, 179, 90);
+    border-left: 2px solid rgb(85, 179, 90);
+    
 
-  } */
+  }
+  .MenuItem2{
+    color: #ffffff;
+    text-decoration: none;
+    
+    border-right: 2px solid rgb(165, 101, 17);
+    
+    transition: 400ms;
+    display: none;
+    font-size: 1rem;
+    border-bottom: 2px solid rgba(85, 179, 90, 0);
+    
+    
+    
+  }
+
+  .MenuItem2:hover{
+    
+    border-radius: 0px 10px 0px 10px;
+    background-color: rgba(0, 255, 64, 0.2);
+    border-bottom: 2px solid rgb(85, 179, 90);
+    border-right: 2px solid rgb(85, 179, 90);
+    
+
+  }
   .topBar{
     display: flex;
     flex-direction: row;
@@ -39,16 +69,33 @@ body{
    transition: 300ms;
    background-size: contain;
    display: flex;
+   background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    top:.5rem
   
   }
 
   .Logo:hover{
-    scale:1600%;
-    transform: translate(0px,15px);
+    scale:1000%;
+    transform: translate(0rem,1.5rem);
+    display: flex;
+    max-width: 3rem;
+    align-items: center;
+    flex-direction: column;
 
     .MenuItem{
+      opacity: 1;
       display: block;
       scale: 20%;
+      
+      
+    }
+    .MenuItem2{
+      opacity: 1;
+      display: block;
+      scale: 20%;
+      
       
     }
   }
