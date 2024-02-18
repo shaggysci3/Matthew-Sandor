@@ -1,22 +1,60 @@
-
-/* body {
-  background: #323641;
-} */
-
+body{
+  margin: 0% !important;
+}
 
   .MenuItem{
     color: #43454d;
     text-decoration: none;
-    padding: 11px;
+    /* padding: 11px;
     border-left: 2px solid white;
-    margin: 15px;
+    margin-left: 1rem; */
+    transition: 300ms;
+    display: none;
+    font-size: 1rem;
+    
   }
 
-  .MenuItem:hover{
-    background-color: white;
-  }
+  /* .MenuItem:hover{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px rgba(82, 177, 255, 0.5);
+
+  } */
   .topBar{
-    background-color: #4ab0d4;
-    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    /* background-color: #4ab0d4; */
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 0px 0px 100px 100px ;
   }
+
+
+  .Logo{
+   background-image: url('src/assets/pixil-frame-0.png');
+   min-height: 2rem;
+   min-width: 1.8rem;
+   transition: 300ms;
+   background-size: contain;
+   display: flex;
+  
+  }
+
+  .Logo:hover{
+    scale:1600%;
+    transform: translate(0px,15px);
+
+    .MenuItem{
+      display: block;
+      scale: 20%;
+      
+    }
+  }
+
+ 
+
+
+  
   

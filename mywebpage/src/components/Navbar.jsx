@@ -1,7 +1,7 @@
 
 import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
-import { NavLink } from 'react-router-dom'
+
 
 
     
@@ -12,23 +12,27 @@ const Navbar = () => {
   return (
     <>
       
-          
-        <nav >
-          <div >
+
+         
             <div className='topBar'>
-              <NavLink to="/" className="MenuItem" >
+              <div className='Logo'>
+              <Link to="/" className="MenuItem" >
                 Home
-              </NavLink>
+              </Link>
 
 
-
-              <NavLink to="/contacts" className="MenuItem">
+              <Link to="/contacts" className="MenuItem">
                   Contact Me
-              </NavLink>
+              </Link>
+              </div>
+              {/* <img className='Logo' src='src/assets/pixil-frame-0.png'>
+              </img> */}
+              
+              
               
             </div>
-          </div>
-        </nav>
+          
+        
             
         
         </>
