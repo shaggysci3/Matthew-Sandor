@@ -12,10 +12,9 @@ body{
     display: none;
     font-size: 1rem;
     border-bottom: 2px solid rgba(85, 179, 90, 0);
-    
-    
-    
+
   }
+  
 
   .MenuItem:hover{
     
@@ -29,26 +28,50 @@ body{
   .MenuItem2{
     color: #ffffff;
     text-decoration: none;
-    
     border-right: 2px solid rgb(165, 101, 17);
-    
     transition: 400ms;
     display: none;
     font-size: 1rem;
-    border-bottom: 2px solid rgba(85, 179, 90, 0);
-    
-    
-    
+    border-bottom: 2px solid rgba(85, 179, 90, 0); 
   }
 
   .MenuItem2:hover{
-    
     border-radius: 0px 10px 0px 10px;
     background-color: rgba(0, 255, 64, 0.2);
     border-bottom: 2px solid rgb(85, 179, 90);
     border-right: 2px solid rgb(85, 179, 90);
-    
+  }
+  .MenuItem3{
+    color: #ffffff;
+    text-decoration: none;
+    border-left: 2px solid rgb(165, 101, 17);
+    transition: 400ms;
+    display: none;
+    font-size: 1rem;
+    border-top: 2px solid rgba(85, 179, 90, 0); 
+  }
 
+  .MenuItem3:hover{
+    border-radius: 0px 10px 0px 10px;
+    background-color: rgba(0, 255, 64, 0.2);
+    border-top: 2px solid rgb(85, 179, 90);
+    border-left: 2px solid rgb(85, 179, 90);
+  }
+  .MenuItem4{
+    color: #ffffff;
+    text-decoration: none;
+    border-right: 2px solid rgb(165, 101, 17);
+    transition: 400ms;
+    display: none;
+    font-size: 1rem;
+    border-top: 2px solid rgba(85, 179, 90, 0); 
+  }
+
+  .MenuItem4:hover{
+    border-radius: 10px 0px 10px 0px;
+    background-color: rgba(0, 255, 64, 0.2);
+    border-top: 2px solid rgb(85, 179, 90);
+    border-right: 2px solid rgb(85, 179, 90);
   }
   .topBar{
     display: flex;
@@ -77,6 +100,7 @@ body{
   }
 
   .Logo:hover{
+    background-image: url('https://cdn.pixilart.com/photos/large/581e7daa390130a.png');
     scale:1000%;
     transform: translate(0rem,1.5rem);
     display: flex;
@@ -95,8 +119,16 @@ body{
       opacity: 1;
       display: block;
       scale: 20%;
-      
-      
+    }
+    .MenuItem3{
+      opacity: 1;
+      display: block;
+      scale: 20%;
+    }
+    .MenuItem4{
+      opacity: 1;
+      display: block;
+      scale: 20%;
     }
   }
 
