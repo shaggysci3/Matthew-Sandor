@@ -2,20 +2,123 @@ body{
   margin: 0% !important;
 }
 
-  .MenuItem{
-    color: #ffffff;
-    text-decoration: none;
+.MenuItem{
+  color: #ffffff;
+  text-decoration: none;
+  
+  border-left: 2px solid rgb(165, 101, 17);
+  
+  transition: 400ms;
+  display: none;
+  font-size: 1rem;
+  border-bottom: 2px solid rgba(85, 179, 90, 0);
+  
+}
+/* book for stickers css for animations and the like */
+
+
+.bookcover{
+ 
+  height: 12.5rem;
+  width: 8.2rem;
+  transition: 100ms;
+  position: fixed;
+  z-index: 5;
+  background-color: rgb(148, 86, 10);
+  border-radius: 10px;
+  left: 8rem
+  
+  
+}
+.bookcover:hover{
+  background-color: rgb(148, 86, 10);
+  height: 12.5rem;
+  width: 16.5rem;
+  transition: 100ms;
+  position: fixed;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  .backpage{
+    opacity: 1;
     
-    border-left: 2px solid rgb(165, 101, 17);
-    
-    transition: 400ms;
-    display: none;
-    font-size: 1rem;
-    border-bottom: 2px solid rgba(85, 179, 90, 0);
+  }
+  .bookpage{
+    width: 7.5rem;
+    border:  2px solid rgb(75, 59, 59);
+    left: -3.9rem;
+  }
+  .bookflip{
+    width: 7.8rem;
+    border:  2px solid rgb(75, 59, 59);
+    left: -3.7rem;
+  }
+
+  .spine{
+    opacity:1;
 
   }
-  
-
+}
+  .backpage{
+      background-color: antiquewhite;
+      height: 11.9rem;
+      width: 15.9rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px 10px 10px 10px;
+      border: 2px solid rgb(75, 69, 59);
+      opacity: 0;
+      transition: 100ms;
+      
+    }
+    .spine{
+      width: 10px;
+      background-color: rgb(56 39 16);
+      height: inherit;
+      position: absolute;
+      
+    }
+    .bookpage{
+      background-color: antiquewhite;
+      height: 11.9rem;
+      width: 0rem;
+      transition: 400ms;
+      border-radius: 10px 0px 0px 10px;
+      left: 5rem;
+      z-index: 0;
+      position: relative;
+      
+      
+    }
+    .bookflip{
+      transform: scaleX(-1);
+      translate: 8rem ;
+      background-color: antiquewhite;
+      height: 11.8rem;
+      width: 0rem;
+      transition: 400ms;
+      border-radius: 10px 0px 0px 10px;
+      
+      z-index: 2;
+      position: relative;
+      left: -11rem;
+      
+    }
+    .flipper{
+      width: 20px;
+      z-index: 3;
+      border-radius: 10px 0px 0px 10px;
+      border-left: 2px solid rgb(75, 69, 59);
+      height: inherit;
+      position: absolute;
+      left: 0.1rem;
+    }
+    
+    
+/* apple hamburger menu for navigation */
   .MenuItem:hover{
     
     border-radius: 10px 0px 10px 0px;
@@ -76,12 +179,11 @@ body{
   .topBar{
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content:flex-start;
     align-items: center;
     /* background-color: #4ab0d4; */
-    padding: 10px;
-    padding-left: 20px;
-    border-radius: 0px 0px 100px 100px ;
+    
+    
   }
 
 
@@ -95,18 +197,21 @@ body{
    background-repeat: no-repeat;
     background-position: center;
     position: fixed;
-    top:.5rem
+    top:.6rem;
+    left:0.8rem;
   
   }
 
+  
   .Logo:hover{
     background-image: url('https://cdn.pixilart.com/photos/large/581e7daa390130a.png');
-    scale:1000%;
-    transform: translate(0rem,1.5rem);
+    scale:900%;
+    transform: translate(1.2rem,1.2rem);
     display: flex;
     max-width: 3rem;
     align-items: center;
     flex-direction: column;
+    z-index: 10;
 
     .MenuItem{
       opacity: 1;
@@ -130,7 +235,75 @@ body{
       display: block;
       scale: 20%;
     }
+    
   }
+
+  /* top bar on every page should be the same to unify the webpage */
+
+  .topbar{
+    width: 100%;
+    height: 4rem;
+    background-color: black;
+    opacity: 1;
+  }
+  .ball{
+    width:3rem;
+    height: 3rem;
+    position: fixed;
+    background-color: rgba(43, 172, 11, 0.808);
+    border-radius: 50%;
+    top: 0.2rem;
+    left: 0.2rem;
+    
+  }
+  .ball:hover{
+    opacity: 0;
+
+    .seed{
+      width: 0.1rem;
+      height: 0.1rem;
+      border-radius: 50%;
+      background-color: rgba(134, 76, 28, 0.438);
+      
+    }
+  }
+  
+  .seed{
+    width: 0.8rem;
+    height: 2rem;
+    border-radius: 50% 50% 10% 10%;
+    background-color: rgba(134, 76, 28, 0.966);
+    position: fixed;
+    top: 1.5rem;
+    left: 1.2rem;
+    
+  }
+
+
+  /* resume scaling down */
+  .resume{
+    max-width: 30%;
+    border: solid black;
+    position: relative;
+    
+  }
+  .resumeContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  /* stckers page container */
+  .stickersContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+   
+  }
+  
 
  
 

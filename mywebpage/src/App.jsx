@@ -16,6 +16,8 @@ import Home from "./routes/Home";
 import Git from "./routes/Git";
 import Navbar from "./components/Navbar";
 import Contact from "./routes/contact";
+import Stickers from "./routes/Stickers";
+import Resume from "./routes/Resume";
 
 
 const App = () =>{
@@ -46,7 +48,13 @@ const router = createBrowserRouter([
       {
         path: "/contacts",
         element: <Contact/>
-      },
+      },{
+        path: "/stickers",
+        element: <Stickers/>
+      },{
+        path: "/resume",
+        element: <Resume/>
+      }
       
       
     ]

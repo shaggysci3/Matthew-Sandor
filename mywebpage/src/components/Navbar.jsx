@@ -15,7 +15,9 @@ const Navbar = () => {
 
          
             <div className='topBar'>
-              
+              {/* <div className='ball'>
+                <div className='seed'></div>
+              </div> */}
               <div className='Logo'>
               
               <div style={{maxHeight:'3rem'}}>
@@ -24,16 +26,16 @@ const Navbar = () => {
               </Link>
 
 
-              <Link to="/contacts" className="MenuItem2" style={{position: 'relative',top:'-0.3rem',left:'-0.8rem'}}>
-              &nbsp;contacT&nbsp;
+              <Link to="/stickers" className="MenuItem2" style={{position: 'relative',top:'-0.3rem',left:'-0.8rem'}}>
+              &nbsp;Stickers&nbsp;
               </Link>
 
               <Link to="/git" className="MenuItem" style={{position: 'relative',top:'-1.5rem',left:'0.7rem'}}>
-              &nbsp;About 
+              &nbsp;Projects 
               </Link> 
 
-              <Link to="/contacts" className="MenuItem4" style={{position: 'relative',top:'-2.3rem',left:'-0.6rem'}}>
-              &nbsp;cOntact 
+              <Link to="/resume" className="MenuItem4" style={{position: 'relative',top:'-2.3rem',left:'-0.6rem'}}>
+              &nbsp;Resume 
               </Link>
 
               <Link to="/contacts" className="MenuItem3" style={{position: 'relative',top:'-3.5rem',left:'0.5rem'}}>
