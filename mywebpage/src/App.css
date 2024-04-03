@@ -303,7 +303,105 @@ body{
     height: 100%;
    
   }
+/* project page */
+.projectPage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.backgroundImage{
+  background-image: url('https://th.bing.com/th/id/OIG2.Ep7CUPmWQdIXuIkVYquP?w=1024&h=1024&rs=1&pid=ImgDetMain');
+  width: 100%;
+  position: absolute;
+  height:110rem;
+  z-index: -3;
+}
+
+.projectContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
   
+  border-radius: 10% 10% 10% 10%;
+  border-color: black;
+  border-width: 7px;
+  transition: 300ms;
+}
+
+.projectContainer:hover{
+  transition: 300ms;
+  .projectInfo{
+    transform: translateX(11.7rem);
+    transition: 100ms;
+    
+    visibility: visible;
+    background-color:white;
+    height: 25rem;
+    border-radius: 10px;
+    width: 20rem;
+    padding: 10px;
+  }
+  .displayImg{
+    transform: translateX(-10rem);
+    position: relative;
+    scale: 105%;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .projectInfo{
+    z-index: 2;
+  }
+}
+
+.projectInfo{
+  border: solid black 3px;
+  
+  transition: 100ms;
+  visibility: hidden;
+  z-index: -1;
+  position: relative;
+  left:-10rem;
+  height: 20rem;
+  width: 20rem;
+  padding: 10px;
+}
+.infoTitle{
+  font-family:'Times New Roman', Times, serif;
+  color: black;
+}
+.infoBody{
+  /* padding: 10px; */
+  font-size: large;
+
+}
+.infoFooter{
+
+}
+
+.displayImg{
+  position: relative;
+ max-block-size: 30rem;
+ transition: 300ms;
+ border-radius: 20px;
+ border: solid 3px rgb(17, 109, 230);
+ left: 10rem;
+
+
+}
+
+.blur{
+  width: 90%;
+    height: 107rem;
+    background-color: aqua;
+    position: absolute;
+    opacity: 46%;
+    left: 5rem;
+    z-index: -2;
+    top: 1rem;
+    border-radius: 42px;
+}
+
 
  
 
