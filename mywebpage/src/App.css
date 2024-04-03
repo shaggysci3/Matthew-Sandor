@@ -377,7 +377,9 @@ body{
 
 }
 .infoFooter{
-
+ position: fixed;
+ left: 7rem;
+ top: 24rem;
 }
 
 .displayImg{
