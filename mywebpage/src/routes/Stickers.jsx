@@ -5,7 +5,7 @@ const Stickers = ()=>{
 
     return(
         <>
-            <Book/>
+            <Book />
         </>
     )
         

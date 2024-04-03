@@ -18,7 +18,6 @@ body{
 
 
 .bookcover{
- 
   height: 12.5rem;
   width: 8.2rem;
   transition: 100ms;
@@ -26,8 +25,9 @@ body{
   z-index: 5;
   background-color: rgb(148, 86, 10);
   border-radius: 10px;
-  left: 8rem
-  
+  left: 50rem;
+  scale:200%;
+  top: 20rem;
   
 }
 .bookcover:hover{
@@ -45,6 +45,7 @@ body{
     opacity: 1;
     
   }
+
   .bookpage{
     width: 7.5rem;
     border:  2px solid rgb(75, 59, 59);
@@ -60,6 +61,18 @@ body{
     opacity:1;
 
   }
+  .coverText{
+    visibility:collapse;
+    scale: 0;
+    position:absolute ;
+  }
+}
+
+.coverText{
+  
+  left: 1.3rem;
+  position: relative;
+
 }
   .backpage{
       background-color: antiquewhite;
@@ -101,11 +114,47 @@ body{
       width: 0rem;
       transition: 400ms;
       border-radius: 10px 0px 0px 10px;
-      
       z-index: 2;
       position: relative;
       left: -11rem;
+    }
+    .pageContent{
+      position: absolute;
+      left: 3rem;
+      top:0rem
       
+    }
+    .pageContentTwo{
+      position:absolute;
+      left: 10rem;
+      top:0rem
+      
+
+    }
+    .stickerContainer{
+      display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 7rem;
+    position: relative;
+    left: -2rem;
+    }
+
+    .sticker{
+      max-block-size: 2rem;
+      
+    }
+    
+    .pageOneContent{
+      transform: scaleX(-1);
+      
+      left: -3rem;
+      position: relative;
+      
+    }
+    .pageTwoContent{
+      position: relative;
+      left: 3rem;
     }
     .flipper{
       width: 20px;
