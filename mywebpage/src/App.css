@@ -348,6 +348,7 @@ body{
     scale: 105%;
     border-radius: 20px;
     overflow: hidden;
+    z-index: 3;
   }
   .projectInfo{
     z-index: 2;
