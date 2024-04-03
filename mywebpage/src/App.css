@@ -144,7 +144,7 @@ body{
       max-block-size: 2rem;
       
     }
-    
+
     .pageOneContent{
       transform: scaleX(-1);
       
@@ -454,6 +454,15 @@ body{
     border-radius: 42px;
 }
 
+.title{
+  background: white;
+  border: solid 2px black;
+  padding: 2px;
+  border-radius: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+
+}
 
  
 

@@ -8,7 +8,7 @@ const Git = () =>{
       <div className="backgroundImage"></div>
       <div className="blur"></div>
       <div className="projectPage">
-        <h1>Character creator</h1>
+        <h1 className="title">Character creator</h1>
         <div className="projectContainer">
       <img className="displayImg" src="https://cdn.pixilart.com/photos/large/089f0b09c43246c.png"></img>
       <div className="projectInfo">
@@ -27,7 +27,7 @@ const Git = () =>{
       </div>
         </div>
 
-        <h1>Time Clock</h1>
+        <h1 className="title">Time Clock</h1>
         <div className="projectContainer">
         <img className="displayImg" src="https://cdn.pixilart.com/photos/large/1856ff3188846e3.png"></img>
           <div className="projectInfo">
@@ -43,7 +43,7 @@ const Git = () =>{
 
         </div>
         
-        <h1>Coffee Shop</h1>
+        <h1 className="title">Coffee Shop</h1>
         <div className="projectContainer">
         <img className="displayImg" src="https://cdn.pixilart.com/photos/large/5e0381b11831b59.png"></img>
         <div className="projectInfo">
