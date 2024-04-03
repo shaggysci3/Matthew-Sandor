@@ -10,7 +10,7 @@ const Git = () =>{
       <div className="projectPage">
         <h1>Character creator</h1>
         <div className="projectContainer">
-      <img className="displayImg" src="src/assets/characterCreation.png"></img>
+      <img className="displayImg" src="https://cdn.pixilart.com/photos/large/089f0b09c43246c.png"></img>
       <div className="projectInfo">
         <h1 className="infoTitle">Character Creator</h1>
         <p className="infoBody"> this was the final project wich included a full front end built out with react and bootstrap as well as a backend with python with multiple many to many connections between datatables. </p>
