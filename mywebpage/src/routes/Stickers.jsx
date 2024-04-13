@@ -5,7 +5,10 @@ const Stickers = ()=>{
 
     return(
         <>
+        <div className="stickerbackImg">
+
             <Book />
+        </div>
         </>
     )
         

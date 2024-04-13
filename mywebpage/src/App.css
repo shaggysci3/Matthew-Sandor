@@ -248,6 +248,7 @@ body{
     position: fixed;
     top:.6rem;
     left:0.8rem;
+    z-index: 2;
   
   }
 
@@ -294,28 +295,10 @@ body{
     height: 4rem;
     background-color: black;
     opacity: 1;
-  }
-  .ball{
-    width:3rem;
-    height: 3rem;
     position: fixed;
-    background-color: rgba(43, 172, 11, 0.808);
-    border-radius: 50%;
-    top: 0.2rem;
-    left: 0.2rem;
-    
+    z-index: 1;
   }
-  .ball:hover{
-    opacity: 0;
-
-    .seed{
-      width: 0.1rem;
-      height: 0.1rem;
-      border-radius: 50%;
-      background-color: rgba(134, 76, 28, 0.438);
-      
-    }
-  }
+  
   
   .seed{
     width: 0.8rem;
@@ -329,7 +312,7 @@ body{
   }
 
 
-  /* resume scaling down */
+  /* resume Page css */
   .resume{
     max-width: 30%;
     border: solid black;
@@ -352,7 +335,7 @@ body{
     height: 100%;
    
   }
-/* project page */
+/* project page and all poject page css*/
 .projectPage{
   display: flex;
   flex-direction: column;
@@ -462,6 +445,84 @@ body{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   
 
+}
+.stickerbackImg{
+  background-image: url(https://th.bing.com/th/id/OIG4.iv1XugKUaqsUyrs18t0s?w=1024&h=1024&rs=1&pid=ImgDetMain);
+}
+
+
+/* home page top banner and title text */
+.homeBanner{
+  background-image: url('https://cdn.pixilart.com/photos/large/06bbcabfc27b68d.jpg');
+  position: absolute;
+    background-size: cover;
+    height: 127%;
+    width: 100%;
+    background-position: center;
+    z-index: -2;
+}
+
+.homeTitle{
+  position: absolute;
+  top: 19%;
+  left: 52%;
+  font-size: 47px;
+  font-weight: bold;
+  background-color: #3a8dad46;
+  border-radius: 10px;
+  padding: 8px;
+  z-index: 1;
+
+}
+
+/*  clouds on home page */
+.backCloud{
+  scale: 30%;
+  position: absolute;
+  top: -30rem;
+  left: 18%;
+  transition: 300ms;
+
+}
+.backCloud:hover{
+  scale:32%;
+  transition:300ms;
+}
+.cloud{
+  scale: 6%;
+  position: absolute;
+  top: -38rem;
+  left: 60rem;
+  opacity: 60%;
+  transition: 300ms;
+}
+.cloudTwo{
+  scale: 10%;
+  position: absolute;
+  top: -25rem;
+  left:-10rem;
+  opacity: 60%;
+  transition: 300ms;
+}
+.cloudThree{
+  scale: 8%;
+  position: absolute;
+  top: -34rem;
+  left: -30rem;
+  opacity: 70%;
+  transform: scaleX(-1) rotate(-15deg);
+  transition: 300ms;
+}
+.cloudThree:hover{
+  scale:10%;
+  transition: 300ms;
+}
+
+.slideContainer{
+  position: relative;
+}
+.test{
+  scale:50%;
 }
 
  
