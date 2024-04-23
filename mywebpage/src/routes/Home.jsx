@@ -18,9 +18,9 @@ const Home = () =>{
 
       <div className="homeBanner"></div>
         
-        <Cloud name={"backCloud"} src={"/src/assets/Home.png"}></Cloud>
-        <Cloud name={"cloud"} src={"/src/assets/Websites.png"}/>
-        <Cloud name={"cloudTwo"} src={"/src/assets/Resume.png"}/>
+        <Cloud name={"backCloud"} src={"src/assets/Home.png"}></Cloud>
+        <Cloud name={"cloud"} src={"src/assets/Websites.png"}/>
+        <Cloud name={"cloudTwo"} src={"src/assets/Resume.png"}/>
         {/* <Cloud name={"cloudThree"} src={"src/assets/cloudThree.png"}/> */}
 
       </>
