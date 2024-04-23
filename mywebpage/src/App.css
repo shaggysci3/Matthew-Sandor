@@ -1,3 +1,5 @@
+
+
 body{
   margin: 0% !important;
 }
@@ -230,6 +232,9 @@ body{
     flex-direction: row;
     justify-content:flex-start;
     align-items: center;
+    /* font-family: 'Monster Friend Back', sans-serif;
+    font-family: 'Monster Friend Fore', sans-serif;
+    font-size: 10px; */
     /* background-color: #4ab0d4; */
     
     
@@ -342,11 +347,12 @@ body{
   align-items: center;
 }
 .backgroundImage{
-  background-image: url('https://th.bing.com/th/id/OIG2.Ep7CUPmWQdIXuIkVYquP?w=1024&h=1024&rs=1&pid=ImgDetMain');
+  background-image: url('https://art.pixilart.com/sr2cb0a10a662aws3.png');
   width: 100%;
   position: absolute;
   height:110rem;
   z-index: -3;
+  background-size: 20%;
 }
 
 .projectContainer{
@@ -428,9 +434,9 @@ body{
 .blur{
   width: 90%;
     height: 107rem;
-    background-color: aqua;
+    background-color: rgb(0, 64, 83);
     position: absolute;
-    opacity: 46%;
+    opacity: 66%;
     left: 5rem;
     z-index: -2;
     top: 1rem;
@@ -456,7 +462,7 @@ body{
   background-image: url('https://cdn.pixilart.com/photos/large/06bbcabfc27b68d.jpg');
   position: absolute;
     background-size: cover;
-    height: 127%;
+    height: 100%;
     width: 100%;
     background-position: center;
     z-index: -2;
@@ -477,32 +483,68 @@ body{
 
 /*  clouds on home page */
 .backCloud{
-  scale: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: absolute;
-  top: -30rem;
-  left: 18%;
+  top: 25%;
+  left: 70%;
+  /* opacity: 60%; */
   transition: 300ms;
+  width: 10rem;
+  height: 10rem;
+  background-image: url('/src/assets/cloudTwo.png');
+  background-size: cover;
+  scale: 110%;
 
 }
 .backCloud:hover{
-  scale:32%;
-  transition:300ms;
+  scale:120%;
+  .cloudIcon{
+    transform: translateY(-4.2rem);
+  }
 }
 .cloud{
-  scale: 6%;
+  /* scale: 6%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: absolute;
-  top: -38rem;
-  left: 60rem;
-  opacity: 60%;
+  top: 10%;
+  left: 30%;
+  /* opacity: 60%; */
   transition: 300ms;
+  width: 10rem;
+  height: 10rem;
+  background-image: url('/src/assets/Cloud.png');
+  background-size: cover;
+}
+.cloud:hover{
+  scale:110%;
+  .cloudIcon{
+    transform: translateY(-4.2rem);
+  }
 }
 .cloudTwo{
-  scale: 10%;
+  /* scale: 6%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: absolute;
-  top: -25rem;
-  left:-10rem;
-  opacity: 60%;
+  top: 20%;
+  left: 10%;
+  /* opacity: 60%; */
   transition: 300ms;
+  width: 10rem;
+  height: 10rem;
+  background-image: url('/src/assets/cloudThree.png');
+  background-size: cover;
+}
+.cloudTwo:hover{
+  scale:110%;
+  .cloudIcon{
+    transform: translateY(-4.2rem);
+  }
 }
 .cloudThree{
   scale: 8%;
@@ -520,10 +562,32 @@ body{
 
 .slideContainer{
   position: relative;
+  overflow: hidden;
+  min-width: 6rem;
+  /* border: solid; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.test{
-  scale:50%;
+.cloudIcon{
+  position: relative;
+  top: 5rem;
+  transition: 300ms;
+  /* background-image: url(src/assets/Home.png); */
+  min-block-size: 5rem;
+  /* border: solid; */
+  /* background-size: cover; */
+  max-width: 5rem;
 }
+
+.Title{
+  font-family: 'Monster Friend Back', sans-serif;
+  font-family: 'Monster Friend Fore', sans-serif;
+  color: #ffffff;
+  text-align: center;
+
+}
+
 
  
 

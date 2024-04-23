@@ -12,17 +12,16 @@ const Home = () =>{
   }
     return(
       <>
-      <div className="topbar">Header Bar</div>
+      <div className="topbar">
+        <h1 className="Title">MatthewSandor</h1>
+      </div>
+
       <div className="homeBanner"></div>
         
-        <Cloud className={"backCloud"} src={"src/assets/titleCloud.png"}>
-        <h1 className="homeTitle">Matthew Sandor</h1>
-        </Cloud>
-        <Cloud className={"cloud"} src={"src/assets/Cloud.png"}/>
-        <Cloud className={"cloudTwo"} src={"src/assets/cloudTwo.png"}/>
-        <Cloud className={"cloudThree"} src={"src/assets/cloudThree.png"}/>
-        
-        
+        <Cloud name={"backCloud"} src={"/src/assets/Home.png"}></Cloud>
+        <Cloud name={"cloud"} src={"/src/assets/Websites.png"}/>
+        <Cloud name={"cloudTwo"} src={"/src/assets/Resume.png"}/>
+        {/* <Cloud name={"cloudThree"} src={"src/assets/cloudThree.png"}/> */}
 
       </>
     )

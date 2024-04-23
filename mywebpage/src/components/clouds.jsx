@@ -1,13 +1,13 @@
 
-const Cloud = ({src,className}) =>{
+const Cloud = ({src,name}) =>{
  
     return(
       <>
-      <div >
+      <div className={name} >
         <div className="slideContainer">
-          {/* <h1>hello</h1> */}
+          <img  src={src} className="cloudIcon"></img>
         </div>
-        <img className={className} src={src}></img>
+        {/* <img className={className} src={src}></img> */}
       </div>
       </>
     )
