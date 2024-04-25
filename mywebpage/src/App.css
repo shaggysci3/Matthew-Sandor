@@ -445,10 +445,11 @@ body{
 
 .title{
   background: rgba(255, 255, 255, 0.76);
-  border: solid 2px rgb(0, 0, 0);
-  padding: 2px;
+  /* border: solid 2px rgb(0, 0, 0); */
+  padding: 5px;
   border-radius: 10px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Monster Friend Back', sans-serif;
+  font-family: 'Monster Friend Fore', sans-serif;
   
 
 }
