@@ -458,11 +458,17 @@ body{
 
 
 /* home page top banner and title text */
+
+.homeContainer{
+  display: flex;
+  flex-direction: column;
+
+}
 .homeBanner{
   background-image: url('https://cdn.pixilart.com/photos/large/06bbcabfc27b68d.jpg');
-  position: absolute;
+  position: relative;
     background-size: cover;
-    height: 100%;
+    height: 53rem;
     width: 100%;
     background-position: center;
     z-index: -2;
@@ -479,6 +485,12 @@ body{
   padding: 8px;
   z-index: 1;
 
+}
+.aboutInfo{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 40rem;
 }
 
 /*  clouds on home page */
