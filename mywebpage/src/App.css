@@ -350,7 +350,7 @@ body{
   background-image: url('https://art.pixilart.com/sr2cb0a10a662aws3.png');
   width: 100%;
   position: absolute;
-  height:110rem;
+  height:130rem;
   z-index: -3;
   background-size: 20%;
 }
@@ -387,6 +387,7 @@ body{
     border-radius: 20px;
     overflow: hidden;
     z-index: 3;
+    
   }
   .projectInfo{
     z-index: 2;
@@ -406,8 +407,9 @@ body{
   padding: 10px;
 }
 .infoTitle{
-  font-family:'Times New Roman', Times, serif;
+  font-family: 'Monster Friend Back', sans-serif;
   color: black;
+
 }
 .infoBody{
   /* padding: 10px; */
@@ -424,8 +426,8 @@ body{
   position: relative;
  max-block-size: 30rem;
  transition: 300ms;
- border-radius: 20px;
- border: solid 3px rgb(17, 109, 230);
+ /* border-radius: 20px; */
+ /* border: solid 3px rgb(17, 109, 230); */
  left: 10rem;
 
 
@@ -433,10 +435,10 @@ body{
 
 .blur{
   width: 90%;
-    height: 107rem;
-    background-color: rgb(0, 64, 83);
+    height: 125rem;
+    background-color: rgb(52, 129, 153);
     position: absolute;
-    opacity: 66%;
+    opacity: 86%;
     left: 5rem;
     z-index: -2;
     top: 1rem;
@@ -444,12 +446,13 @@ body{
 }
 
 .title{
-  background: rgba(255, 255, 255, 0.76);
+  background: rgba(0, 0, 0, 0.76);
   /* border: solid 2px rgb(0, 0, 0); */
-  padding: 5px;
-  border-radius: 10px;
+  padding: 10px;
+  /* border-radius: 10px; */
   font-family: 'Monster Friend Back', sans-serif;
   font-family: 'Monster Friend Fore', sans-serif;
+  color: #ffffff;
   
 
 }
@@ -470,9 +473,10 @@ body{
   position: relative;
     background-size: cover;
     height: 53rem;
-    width: 100%;
+    /* width: 90%; */
     background-position: center;
     z-index: -2;
+    
 }
 
 .homeTitle{
@@ -491,7 +495,7 @@ body{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 40rem;
+  height: 28rem;
 }
 
 /*  clouds on home page */
@@ -514,7 +518,11 @@ body{
 .backCloud:hover{
   scale:120%;
   .cloudIcon{
-    transform: translateY(-4.2rem);
+    transform: translateY(-5.8rem);
+  }
+  .sliderName{
+    transform:translateY(-5.4rem);
+    z-index: 4;
   }
 }
 .cloud{
@@ -535,7 +543,11 @@ body{
 .cloud:hover{
   scale:110%;
   .cloudIcon{
-    transform: translateY(-4.2rem);
+    transform: translateY(-5.8rem);
+  }
+  .sliderName{
+    transform:translateY(-5.8rem);
+    z-index: 4;
   }
 }
 .cloudTwo{
@@ -556,7 +568,12 @@ body{
 .cloudTwo:hover{
   scale:110%;
   .cloudIcon{
-    transform: translateY(-4.2rem);
+    transform: translateY(-6.5rem);
+  }
+  .sliderName{
+    transform:translateY(-5.8rem);
+    z-index: 4;
+    font-size: 10pt;
   }
 }
 .cloudThree{
@@ -592,6 +609,15 @@ body{
   /* background-size: cover; */
   max-width: 5rem;
 }
+.sliderName{
+  transition: 430ms;
+  position: relative;
+  top:10.4rem;
+  font-family: 'Monster Friend Back', sans-serif;
+  background-color: #ffffffd5;
+  color: #000000;
+  padding: 4px;
+}
 
 .Title{
   font-family: 'Monster Friend Back', sans-serif;
@@ -601,6 +627,16 @@ body{
 
 }
 
+.readMore{
+  font-family: 'Monster Friend Back', sans-serif;
+  color: #000000;
+  font-size: 20pt;
+  text-decoration: none;
+}
+.readMore:hover{
+  color: #324f70;
+  text-decoration:underline;
+}
 
  
 

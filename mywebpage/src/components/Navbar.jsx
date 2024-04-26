@@ -39,7 +39,7 @@ const Navbar = () => {
               </Link>
 
               <Link to="/contacts" className="MenuItem3" style={{position: 'relative',top:'-3.5rem',left:'0.5rem'}}>
-              &nbsp;Contact&nbsp;
+              &nbsp;Education&nbsp;
               </Link>
 
               

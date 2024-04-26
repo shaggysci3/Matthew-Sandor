@@ -6,8 +6,10 @@ const Git = () =>{
       <>
 
       <div className="backgroundImage"></div>
+      
       <div className="blur"></div>
       <div className="projectPage">
+      <h1 className="Title" style={{padding:"40px", fontSize:"40pt",backgroundColor:"black", width:"40%",textAlign:"center"}} >Projects</h1>
         <h1 className="title">Character creator</h1>
         <div className="projectContainer">
       <img className="displayImg" src="https://cdn.pixilart.com/photos/large/089f0b09c43246c.png"></img>
@@ -31,7 +33,7 @@ const Git = () =>{
         <div className="projectContainer">
         <img className="displayImg" src="https://cdn.pixilart.com/photos/large/1856ff3188846e3.png"></img>
           <div className="projectInfo">
-            <h1>Title</h1>
+            <h1 className="infoTitle">Time Clock</h1>
             <p className="infoBody"> site description: </p>
         <p>users are able to clock in and out with their user ID as well as admins may login and add/remove users as needed</p>
         <p>Tools Used:</p>
@@ -46,12 +48,12 @@ const Git = () =>{
         <h1 className="title">Coffee Shop</h1>
         <div className="projectContainer">
         <img className="displayImg" src="https://cdn.pixilart.com/photos/large/5e0381b11831b59.png"></img>
-        <div className="projectInfo">
-            <h1>Title</h1>
+          <div className="projectInfo">
+            <h1 className="infoTitle">Coffee Shop</h1>
             <p className="infoBody"> site description: </p>
-        <p>users are able to create and delete as well as see coffee prices and descriptions</p>
-        <p>Tools Used:</p>
-        <ul>
+          <p>users are able to create and delete as well as see coffee prices and descriptions</p>
+          <p>Tools Used:</p>
+          <ul>
           <li>React</li>
           
         </ul>
