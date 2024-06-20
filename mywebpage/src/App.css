@@ -637,9 +637,11 @@ body{
   color: #324f70;
   text-decoration:underline;
 }
+.certificate{
+  position: relative; 
+  display: inline-block; 
+}
 
- 
 
 
-  
   
