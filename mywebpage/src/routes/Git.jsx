@@ -1,4 +1,5 @@
 import { Button } from "bootstrap"
+// import ControlledCarousel from "../components/ControlledCarousel"
 
 const Git = () =>{
  
@@ -9,8 +10,11 @@ const Git = () =>{
       
       <div className="blur"></div>
       <div className="projectPage">
-      <h1 className="Title" style={{padding:"40px", fontSize:"40pt",backgroundColor:"black", width:"40%",textAlign:"center"}} >Projects</h1>
-        <h1 className="title">Character creator</h1>
+      {/* <h1 className="Title" style={{padding:"40px", fontSize:"40pt",backgroundColor:"black", width:"40%",textAlign:"center"}} >Projects</h1> */}
+        
+        <h1 className="title">Featured</h1>
+
+        
         <div className="projectContainer">
       <img className="displayImg" src="https://cdn.pixilart.com/photos/large/089f0b09c43246c.png"></img>
       <div className="projectInfo">
@@ -28,8 +32,8 @@ const Git = () =>{
       <a className="infoFooter" href="https://github.com/shaggysci3/CatQuest" target="_blank" rel="noopener noreferrer">Project Github</a>
       </div>
         </div>
-
-        <h1 className="title">Time Clock</h1>
+{/*  */}
+        {/* <h1 className="title">Time Clock</h1>
         <div className="projectContainer">
         <img className="displayImg" src="https://cdn.pixilart.com/photos/large/1856ff3188846e3.png"></img>
           <div className="projectInfo">
@@ -60,7 +64,7 @@ const Git = () =>{
             <a className="infoFooter" href="https://github.com/shaggysci3/coffee" target="_blank" rel="noopener noreferrer">time clock app</a>
           </div>
         
-        </div>
+        </div> */}
       </div>
       </>
     )

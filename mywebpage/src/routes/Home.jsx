@@ -12,9 +12,9 @@ const Home = () =>{
   }
     return(
       <>
-      <div className="topbar">
+      {/* <div className="topbar">
         <h1 className="Title">MatthewSandor</h1>
-      </div>
+      </div> */}
       <div className="homeContainer">
 
       <div className="homeBanner"></div>
@@ -31,7 +31,7 @@ const Home = () =>{
       </div> */}
 
       <div className="aboutInfo">
-      <a className="readMore" href="https://github.com/shaggysci3/CatQuest" target="_blank" rel="noopener noreferrer">Read More</a>
+      <a className="readMore" href="https://flatironschool.com/courses/coding-bootcamp/" target="_blank" rel="noopener noreferrer">Read More</a>
         <img style={{ border: '2px solid black', scale: '170%' }} src="https://imgs.search.brave.com/RhgplZAA43WpqAPL8bnVuHdzjJA8gTfHS8AIdufrXuM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/b25saW5lc2Nob29s/c2d1aWRlLm5ldC93/cC1jb250ZW50L3Vw/bG9hZHMvZmxhdGly/b24tc2Nob29sLWxv/Z28ucG5n"></img>
       </div>
 

@@ -232,6 +232,8 @@ body{
     flex-direction: row;
     justify-content:flex-start;
     align-items: center;
+    z-index: 5;
+    
     /* font-family: 'Monster Friend Back', sans-serif;
     font-family: 'Monster Friend Fore', sans-serif;
     font-size: 10px; */
@@ -253,7 +255,7 @@ body{
     position: fixed;
     top:.6rem;
     left:0.8rem;
-    z-index: 2;
+    z-index: 10;
   
   }
 
@@ -296,12 +298,13 @@ body{
   /* top bar on every page should be the same to unify the webpage */
 
   .topbar{
+    
     width: 100%;
     height: 4rem;
     background-color: black;
     opacity: 1;
     position: fixed;
-    z-index: 1;
+    /* z-index: 1; */
   }
   
   
@@ -342,6 +345,7 @@ body{
   }
 /* project page and all poject page css*/
 .projectPage{
+  padding-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -377,7 +381,7 @@ body{
     background-color:white;
     height: 25rem;
     border-radius: 10px;
-    width: 20rem;
+    width: 18rem;
     padding: 10px;
   }
   .displayImg{
@@ -387,6 +391,7 @@ body{
     border-radius: 20px;
     overflow: hidden;
     z-index: 3;
+    max-block-size: 25rem;
     
   }
   .projectInfo{
@@ -436,7 +441,7 @@ body{
 .blur{
   width: 90%;
     height: 125rem;
-    background-color: rgb(52, 129, 153);
+    background-color: rgb(41 41 44);
     position: absolute;
     opacity: 86%;
     left: 5rem;
@@ -624,7 +629,19 @@ body{
   font-family: 'Monster Friend Fore', sans-serif;
   color: #ffffff;
   text-align: center;
+  padding-left: 60px;
 
+}
+.navItem{
+  font-family: 'Monster Friend Back', sans-serif;
+  font-family: 'Monster Friend Fore', sans-serif;
+  color: #ffffff;
+  text-align: center;
+  padding-inline: 20px;
+  text-decoration: unset;
+}
+.navItem:hover{
+  text-decoration: underline;
 }
 
 .readMore{

@@ -18,12 +18,15 @@ import Navbar from "./components/Navbar";
 import Contact from "./routes/contact";
 import Stickers from "./routes/Stickers";
 import Resume from "./routes/Resume";
+import NavbarTwo from "./components/NavbarTwo";
 
 
 const App = () =>{
  
   return(
     <>
+    
+      <NavbarTwo/>
       <Navbar/>
       <Outlet/>
     </>
