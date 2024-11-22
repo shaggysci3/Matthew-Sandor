@@ -33,18 +33,20 @@ const Git = () =>{
       </div>
         </div>
 {/*  */}
-        {/* <h1 className="title">Time Clock</h1>
+        <h1 className="title">Tusken And The Raiders</h1>
         <div className="projectContainer">
-        <img className="displayImg" src="https://cdn.pixilart.com/photos/large/1856ff3188846e3.png"></img>
+        <img className="displayImg" src="https://hzlezhtofxpfmuntarie.supabase.co/storage/v1/object/public/recordings/Screenshot%202024-11-22%20162808.png"></img>
           <div className="projectInfo">
             <h1 className="infoTitle">Time Clock</h1>
             <p className="infoBody"> site description: </p>
-        <p>users are able to clock in and out with their user ID as well as admins may login and add/remove users as needed</p>
+        <p>a place for a band to post recordings and for venues to book the band "tusken and the raiders" for shows</p>
         <p>Tools Used:</p>
         <ul>
+          <li>React</li>
+          <li>RestApi with Flask includes full CRUD operations</li>
           <li>Python</li>
         </ul>
-            <a className="infoFooter" href="https://github.com/AustinBByrd/Phase-3-project" target="_blank" rel="noopener noreferrer">time clock app</a>
+            <a className="infoFooter" href="https://github.com/shaggysci3/TuskatRaid" target="_blank" rel="noopener noreferrer">Tusken And The Raiders</a>
           </div>
 
         </div>
@@ -64,7 +66,7 @@ const Git = () =>{
             <a className="infoFooter" href="https://github.com/shaggysci3/coffee" target="_blank" rel="noopener noreferrer">time clock app</a>
           </div>
         
-        </div> */}
+        </div>
       </div>
       </>
     )
