@@ -322,12 +322,14 @@ body{
 
   /* resume Page css */
   .resume{
-    max-width: 30%;
-    border: solid black;
-    position: relative;
+    transform: scale(1);
+  transform-origin: 0 0;
+  width: 66.67%; 
+  height: 100vh;
     
   }
   .resumeContainer{
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -370,18 +372,27 @@ body{
   border-width: 7px;
   transition: 300ms;
 }
-
 .projectContainer:hover{
+  cursor:pointer;
+}
+
+/* p{
+ margin: 0px;
+} */
+.selectedProject{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
   transition: 300ms;
   .projectInfo{
     transform: translateX(11.7rem);
     transition: 100ms;
-    
     visibility: visible;
     background-color:white;
-    height: 25rem;
+    height: 425px;
     border-radius: 10px;
-    width: 18rem;
+    width: 324px;
     padding: 10px;
   }
   .displayImg{
@@ -391,7 +402,7 @@ body{
     border-radius: 20px;
     overflow: hidden;
     z-index: 3;
-    max-block-size: 25rem;
+    max-block-size: 450px;
     
   }
   .projectInfo{
@@ -400,18 +411,21 @@ body{
 }
 
 .projectInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   border: solid black 3px;
-  
   transition: 100ms;
   visibility: hidden;
   z-index: -1;
   position: relative;
   left:-10rem;
-  height: 20rem;
+  height: 370px;
   width: 20rem;
   padding: 10px;
 }
 .infoTitle{
+  text-align: center;
   font-family: 'Monster Friend Back', sans-serif;
   color: black;
 
@@ -422,14 +436,13 @@ body{
 
 }
 .infoFooter{
- position: fixed;
- left: 7rem;
- top: 24rem;
+ position: relative;
+ text-align: center;
 }
 
 .displayImg{
   position: relative;
- max-block-size: 30rem;
+ max-block-size: 450px;
  transition: 300ms;
  /* border-radius: 20px; */
  /* border: solid 3px rgb(17, 109, 230); */
