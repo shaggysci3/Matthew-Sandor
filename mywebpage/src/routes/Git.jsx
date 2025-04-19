@@ -29,13 +29,12 @@ const Git = () =>{
         <h1 className="infoTitle">Character Creator</h1>
         <div>
           <p className="infoBody"> site description: </p>
-          <p>users are able to create and account and create customizeable characters and view other's creations</p>
+          <p>users are able to create and account and create customizeable characters and view other's </p>
         </div>
         <div>
           <p>Tools Used:</p>
           <ul>
             <li>React</li>
-            <li>Boostrap</li>
             <li>Python</li>
             <li>SQL Database</li>
           </ul>

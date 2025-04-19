@@ -386,14 +386,16 @@ body{
   width: fit-content;
   transition: 300ms;
   .projectInfo{
+    
     transform: translateX(11.7rem);
     transition: 100ms;
     visibility: visible;
     background-color:white;
-    height: 425px;
+    height: fit-content;
     border-radius: 10px;
     width: 324px;
     padding: 10px;
+    
   }
   .displayImg{
     transform: translateX(-10rem);
@@ -402,7 +404,7 @@ body{
     border-radius: 20px;
     overflow: hidden;
     z-index: 3;
-    max-block-size: 450px;
+    max-block-size: 350px;
     
   }
   .projectInfo{
@@ -420,7 +422,7 @@ body{
   z-index: -1;
   position: relative;
   left:-10rem;
-  height: 370px;
+  height: fit-content;
   width: 20rem;
   padding: 10px;
 }
@@ -442,7 +444,7 @@ body{
 
 .displayImg{
   position: relative;
- max-block-size: 450px;
+ max-block-size: 350px;
  transition: 300ms;
  /* border-radius: 20px; */
  /* border: solid 3px rgb(17, 109, 230); */
