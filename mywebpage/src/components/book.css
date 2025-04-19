@@ -1,0 +1,153 @@
+/* book for stickers css for animations and the like */
+
+
+.bookcover{
+    height: 12.5rem;
+    width: 8.2rem;
+    transition: 100ms;
+    position: fixed;
+    z-index: 5;
+    background-color: rgb(148, 86, 10);
+    border-radius: 10px;
+    left: 50rem;
+    scale:200%;
+    top: 20rem;
+    
+  }
+  .bookcover:hover{
+    background-color: rgb(148, 86, 10);
+    height: 12.5rem;
+    width: 16.5rem;
+    transition: 100ms;
+    position: fixed;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    .backpage{
+      opacity: 1;
+      
+    }
+  
+    .bookpage{
+      width: 7.5rem;
+      border:  2px solid rgb(75, 59, 59);
+      left: -3.9rem;
+    }
+    .bookflip{
+      width: 7.8rem;
+      border:  2px solid rgb(75, 59, 59);
+      left: -3.7rem;
+    }
+  
+    .spine{
+      opacity:1;
+  
+    }
+    .coverText{
+      visibility:collapse;
+      scale: 0;
+      position:absolute ;
+    }
+  }
+  
+  .coverText{
+    
+    left: 1.3rem;
+    position: relative;
+  
+  }
+    .backpage{
+        background-color: antiquewhite;
+        height: 11.9rem;
+        width: 15.9rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px 10px 10px 10px;
+        border: 2px solid rgb(75, 69, 59);
+        opacity: 0;
+        transition: 100ms;
+        
+      }
+      .spine{
+        width: 10px;
+        background-color: rgb(56 39 16);
+        height: inherit;
+        position: absolute;
+        
+      }
+      .bookpage{
+        background-color: antiquewhite;
+        height: 11.9rem;
+        width: 0rem;
+        transition: 400ms;
+        border-radius: 10px 0px 0px 10px;
+        left: 5rem;
+        z-index: 0;
+        position: relative;
+        
+        
+      }
+      .bookflip{
+        transform: scaleX(-1);
+        translate: 8rem ;
+        background-color: antiquewhite;
+        height: 11.8rem;
+        width: 0rem;
+        transition: 400ms;
+        border-radius: 10px 0px 0px 10px;
+        z-index: 2;
+        position: relative;
+        left: -11rem;
+      }
+      .pageContent{
+        position: absolute;
+        left: 3rem;
+        top:0rem
+        
+      }
+      .pageContentTwo{
+        position:absolute;
+        left: 10rem;
+        top:0rem
+        
+  
+      }
+      .stickerContainer{
+        display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      max-width: 7rem;
+      position: relative;
+      left: -2rem;
+      }
+  
+      .sticker{
+        max-block-size: 2rem;
+        
+      }
+  
+      .pageOneContent{
+        transform: scaleX(-1);
+        
+        left: -3rem;
+        position: relative;
+        
+      }
+      .pageTwoContent{
+        position: relative;
+        left: 3rem;
+      }
+      .flipper{
+        width: 20px;
+        z-index: 3;
+        border-radius: 10px 0px 0px 10px;
+        border-left: 2px solid rgb(75, 69, 59);
+        height: inherit;
+        position: absolute;
+        left: 0.1rem;
+      }
+      
+      

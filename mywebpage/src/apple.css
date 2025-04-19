@@ -1,0 +1,125 @@
+/* apple hamburger menu for navigation */
+.MenuItem:hover{
+    
+    border-radius: 10px 0px 10px 0px;
+    background-color: rgba(0, 255, 64, 0.2);
+    border-bottom: 2px solid rgb(85, 179, 90);
+    border-left: 2px solid rgb(85, 179, 90);
+    
+
+  }
+  .MenuItem2{
+    color: #ffffff;
+    text-decoration: none;
+    border-right: 2px solid rgb(165, 101, 17);
+    transition: 400ms;
+    display: none;
+    font-size: 1rem;
+    border-bottom: 2px solid rgba(85, 179, 90, 0); 
+  }
+
+  .MenuItem2:hover{
+    border-radius: 0px 10px 0px 10px;
+    background-color: rgba(0, 255, 64, 0.2);
+    border-bottom: 2px solid rgb(85, 179, 90);
+    border-right: 2px solid rgb(85, 179, 90);
+  }
+  .MenuItem3{
+    color: #ffffff;
+    text-decoration: none;
+    border-left: 2px solid rgb(165, 101, 17);
+    transition: 400ms;
+    display: none;
+    font-size: 1rem;
+    border-top: 2px solid rgba(85, 179, 90, 0); 
+  }
+
+  .MenuItem3:hover{
+    border-radius: 0px 10px 0px 10px;
+    background-color: rgba(0, 255, 64, 0.2);
+    border-top: 2px solid rgb(85, 179, 90);
+    border-left: 2px solid rgb(85, 179, 90);
+  }
+  .MenuItem4{
+    color: #ffffff;
+    text-decoration: none;
+    border-right: 2px solid rgb(165, 101, 17);
+    transition: 400ms;
+    display: none;
+    font-size: 1rem;
+    border-top: 2px solid rgba(85, 179, 90, 0); 
+  }
+
+  .MenuItem4:hover{
+    border-radius: 10px 0px 10px 0px;
+    background-color: rgba(0, 255, 64, 0.2);
+    border-top: 2px solid rgb(85, 179, 90);
+    border-right: 2px solid rgb(85, 179, 90);
+  }
+  .topBar{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    z-index: 5;
+    
+    /* font-family: 'Monster Friend Back', sans-serif;
+    font-family: 'Monster Friend Fore', sans-serif;
+    font-size: 10px; */
+    /* background-color: #4ab0d4; */
+    
+    
+  }
+
+
+  .Logo{
+   background-image: url('https://cdn.pixilart.com/photos/large/f9566e27794bf5f.png');
+   min-height: 2rem;
+   min-width: 1.8rem;
+   transition: 300ms;
+   background-size: contain;
+   display: flex;
+   background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    top:.6rem;
+    left:0.8rem;
+    z-index: 10;
+  
+  }
+
+  
+  .Logo:hover{
+    background-image: url('https://cdn.pixilart.com/photos/large/581e7daa390130a.png');
+    scale:900%;
+    transform: translate(1.2rem,1.2rem);
+    display: flex;
+    max-width: 3rem;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+
+    .MenuItem{
+      opacity: 1;
+      display: block;
+      scale: 20%;
+      
+      
+    }
+    .MenuItem2{
+      opacity: 1;
+      display: block;
+      scale: 20%;
+    }
+    .MenuItem3{
+      opacity: 1;
+      display: block;
+      scale: 20%;
+    }
+    .MenuItem4{
+      opacity: 1;
+      display: block;
+      scale: 20%;
+    }
+    
+  }

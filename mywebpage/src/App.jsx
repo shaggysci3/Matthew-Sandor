@@ -9,6 +9,10 @@ import {
 // import Navbar from "./components/Navbar";
 import { Outlet } from "react-router-dom";
 import "./App.css"
+import "./components/book.css"
+import "./routes/home.css"
+import "./routes/projects.css"
+import "./apple.css"
 
 import { useEffect } from "react";
 import ErrorPage from "./routes/ErrorPage";

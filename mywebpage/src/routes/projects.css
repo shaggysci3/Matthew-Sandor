@@ -1,0 +1,173 @@
+/* project page and all poject page css*/
+.projectPage{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .backgroundImage{
+    background-image: url('https://art.pixilart.com/sr2cb0a10a662aws3.png');
+    width: 100%;
+    position: absolute;
+    height:130rem;
+    z-index: -3;
+    background-size: 20%;
+  }
+  
+  .projectContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+    
+    border-radius: 10% 10% 10% 10%;
+    border-color: black;
+    border-width: 7px;
+    transition: 300ms;
+  }
+  .projectContainer:hover{
+    cursor:pointer;
+  }
+  
+  /* p{
+   margin: 0px;
+  } */
+  .selectedProject{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+    transition: 300ms;
+    .projectInfo{
+      
+      transform: translateX(11.7rem);
+      transition: 100ms;
+      visibility: visible;
+      background-color:white;
+      height: fit-content;
+      border-radius: 10px;
+      width: 324px;
+      padding: 10px;
+      
+    }
+    .displayImg{
+      transform: translateX(-10rem);
+      position: relative;
+      scale: 105%;
+      border-radius: 20px;
+      overflow: hidden;
+      z-index: 3;
+      max-block-size: 350px;
+      
+    }
+    .projectInfo{
+      z-index: 2;
+    }
+  }
+  
+  .projectInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: solid black 3px;
+    transition: 100ms;
+    visibility: hidden;
+    z-index: -1;
+    position: relative;
+    left:-10rem;
+    height: fit-content;
+    width: 20rem;
+    padding: 10px;
+  }
+  .infoTitle{
+    text-align: center;
+    font-family: 'Monster Friend Back', sans-serif;
+    color: black;
+  
+  }
+  .infoBody{
+    /* padding: 10px; */
+    font-size: large;
+  
+  }
+  .infoFooter{
+   position: relative;
+   text-align: center;
+  }
+  
+  .displayImg{
+    position: relative;
+   max-block-size: 350px;
+   transition: 300ms;
+   /* border-radius: 20px; */
+   /* border: solid 3px rgb(17, 109, 230); */
+   left: 10rem;
+  
+  
+  }
+  
+  .blur{
+    width: 90%;
+      height: 125rem;
+      background-color: rgb(41 41 44);
+      position: absolute;
+      opacity: 86%;
+      left: 5rem;
+      z-index: -2;
+      top: 1rem;
+      border-radius: 42px;
+  }
+  
+  .title{
+    background: rgba(0, 0, 0, 0.76);
+    /* border: solid 2px rgb(0, 0, 0); */
+    padding: 10px;
+    /* border-radius: 10px; */
+    font-family: 'Monster Friend Back', sans-serif;
+    font-family: 'Monster Friend Fore', sans-serif;
+    color: #ffffff;
+    
+  
+  }
+  .stickerbackImg{
+    background-image: url(https://th.bing.com/th/id/OIG4.iv1XugKUaqsUyrs18t0s?w=1024&h=1024&rs=1&pid=ImgDetMain);
+  }
+  
+  
+  /* home page top banner and title text */
+  
+  .homeContainer{
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .homeBanner{
+    background-image: url('https://cdn.pixilart.com/photos/large/06bbcabfc27b68d.jpg');
+    position: relative;
+      background-size: cover;
+      height: 53rem;
+      /* width: 90%; */
+      background-position: center;
+      z-index: -2;
+      
+  }
+  
+  .homeTitle{
+    position: absolute;
+    top: 19%;
+    left: 52%;
+    font-size: 47px;
+    font-weight: bold;
+    background-color: #3a8dad46;
+    border-radius: 10px;
+    padding: 8px;
+    z-index: 1;
+  
+  }
+  .aboutInfo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 28rem;
+  }
+  

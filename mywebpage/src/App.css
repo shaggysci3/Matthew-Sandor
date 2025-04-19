@@ -16,674 +16,125 @@ body{
   border-bottom: 2px solid rgba(85, 179, 90, 0);
   
 }
-/* book for stickers css for animations and the like */
 
-
-.bookcover{
-  height: 12.5rem;
-  width: 8.2rem;
-  transition: 100ms;
+.topbar{
+  
+  width: 100%;
+  height: 4rem;
+  background-color: black;
+  opacity: 1;
   position: fixed;
-  z-index: 5;
-  background-color: rgb(148, 86, 10);
-  border-radius: 10px;
-  left: 50rem;
-  scale:200%;
-  top: 20rem;
-  
+  /* z-index: 1; */
 }
-.bookcover:hover{
-  background-color: rgb(148, 86, 10);
-  height: 12.5rem;
-  width: 16.5rem;
-  transition: 100ms;
+
+
+.seed{
+  width: 0.8rem;
+  height: 2rem;
+  border-radius: 50% 50% 10% 10%;
+  background-color: rgba(134, 76, 28, 0.966);
   position: fixed;
-  z-index: -1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  .backpage{
-    opacity: 1;
-    
-  }
-
-  .bookpage{
-    width: 7.5rem;
-    border:  2px solid rgb(75, 59, 59);
-    left: -3.9rem;
-  }
-  .bookflip{
-    width: 7.8rem;
-    border:  2px solid rgb(75, 59, 59);
-    left: -3.7rem;
-  }
-
-  .spine{
-    opacity:1;
-
-  }
-  .coverText{
-    visibility:collapse;
-    scale: 0;
-    position:absolute ;
-  }
+  top: 1.5rem;
+  left: 1.2rem;
+  
 }
 
-.coverText{
-  
-  left: 1.3rem;
-  position: relative;
 
-}
-  .backpage{
-      background-color: antiquewhite;
-      height: 11.9rem;
-      width: 15.9rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 10px 10px 10px 10px;
-      border: 2px solid rgb(75, 69, 59);
-      opacity: 0;
-      transition: 100ms;
-      
-    }
-    .spine{
-      width: 10px;
-      background-color: rgb(56 39 16);
-      height: inherit;
-      position: absolute;
-      
-    }
-    .bookpage{
-      background-color: antiquewhite;
-      height: 11.9rem;
-      width: 0rem;
-      transition: 400ms;
-      border-radius: 10px 0px 0px 10px;
-      left: 5rem;
-      z-index: 0;
-      position: relative;
-      
-      
-    }
-    .bookflip{
-      transform: scaleX(-1);
-      translate: 8rem ;
-      background-color: antiquewhite;
-      height: 11.8rem;
-      width: 0rem;
-      transition: 400ms;
-      border-radius: 10px 0px 0px 10px;
-      z-index: 2;
-      position: relative;
-      left: -11rem;
-    }
-    .pageContent{
-      position: absolute;
-      left: 3rem;
-      top:0rem
-      
-    }
-    .pageContentTwo{
-      position:absolute;
-      left: 10rem;
-      top:0rem
-      
-
-    }
-    .stickerContainer{
-      display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-width: 7rem;
-    position: relative;
-    left: -2rem;
-    }
-
-    .sticker{
-      max-block-size: 2rem;
-      
-    }
-
-    .pageOneContent{
-      transform: scaleX(-1);
-      
-      left: -3rem;
-      position: relative;
-      
-    }
-    .pageTwoContent{
-      position: relative;
-      left: 3rem;
-    }
-    .flipper{
-      width: 20px;
-      z-index: 3;
-      border-radius: 10px 0px 0px 10px;
-      border-left: 2px solid rgb(75, 69, 59);
-      height: inherit;
-      position: absolute;
-      left: 0.1rem;
-    }
-    
-    
-/* apple hamburger menu for navigation */
-  .MenuItem:hover{
-    
-    border-radius: 10px 0px 10px 0px;
-    background-color: rgba(0, 255, 64, 0.2);
-    border-bottom: 2px solid rgb(85, 179, 90);
-    border-left: 2px solid rgb(85, 179, 90);
-    
-
-  }
-  .MenuItem2{
-    color: #ffffff;
-    text-decoration: none;
-    border-right: 2px solid rgb(165, 101, 17);
-    transition: 400ms;
-    display: none;
-    font-size: 1rem;
-    border-bottom: 2px solid rgba(85, 179, 90, 0); 
-  }
-
-  .MenuItem2:hover{
-    border-radius: 0px 10px 0px 10px;
-    background-color: rgba(0, 255, 64, 0.2);
-    border-bottom: 2px solid rgb(85, 179, 90);
-    border-right: 2px solid rgb(85, 179, 90);
-  }
-  .MenuItem3{
-    color: #ffffff;
-    text-decoration: none;
-    border-left: 2px solid rgb(165, 101, 17);
-    transition: 400ms;
-    display: none;
-    font-size: 1rem;
-    border-top: 2px solid rgba(85, 179, 90, 0); 
-  }
-
-  .MenuItem3:hover{
-    border-radius: 0px 10px 0px 10px;
-    background-color: rgba(0, 255, 64, 0.2);
-    border-top: 2px solid rgb(85, 179, 90);
-    border-left: 2px solid rgb(85, 179, 90);
-  }
-  .MenuItem4{
-    color: #ffffff;
-    text-decoration: none;
-    border-right: 2px solid rgb(165, 101, 17);
-    transition: 400ms;
-    display: none;
-    font-size: 1rem;
-    border-top: 2px solid rgba(85, 179, 90, 0); 
-  }
-
-  .MenuItem4:hover{
-    border-radius: 10px 0px 10px 0px;
-    background-color: rgba(0, 255, 64, 0.2);
-    border-top: 2px solid rgb(85, 179, 90);
-    border-right: 2px solid rgb(85, 179, 90);
-  }
-  .topBar{
-    display: flex;
-    flex-direction: row;
-    justify-content:flex-start;
-    align-items: center;
-    z-index: 5;
-    
-    /* font-family: 'Monster Friend Back', sans-serif;
-    font-family: 'Monster Friend Fore', sans-serif;
-    font-size: 10px; */
-    /* background-color: #4ab0d4; */
-    
-    
-  }
-
-
-  .Logo{
-   background-image: url('https://cdn.pixilart.com/photos/large/f9566e27794bf5f.png');
-   min-height: 2rem;
-   min-width: 1.8rem;
-   transition: 300ms;
-   background-size: contain;
-   display: flex;
-   background-repeat: no-repeat;
-    background-position: center;
-    position: fixed;
-    top:.6rem;
-    left:0.8rem;
-    z-index: 10;
-  
-  }
-
-  
-  .Logo:hover{
-    background-image: url('https://cdn.pixilart.com/photos/large/581e7daa390130a.png');
-    scale:900%;
-    transform: translate(1.2rem,1.2rem);
-    display: flex;
-    max-width: 3rem;
-    align-items: center;
-    flex-direction: column;
-    z-index: 10;
-
-    .MenuItem{
-      opacity: 1;
-      display: block;
-      scale: 20%;
-      
-      
-    }
-    .MenuItem2{
-      opacity: 1;
-      display: block;
-      scale: 20%;
-    }
-    .MenuItem3{
-      opacity: 1;
-      display: block;
-      scale: 20%;
-    }
-    .MenuItem4{
-      opacity: 1;
-      display: block;
-      scale: 20%;
-    }
-    
-  }
-
-  /* top bar on every page should be the same to unify the webpage */
-
-  .topbar{
-    
-    width: 100%;
-    height: 4rem;
-    background-color: black;
-    opacity: 1;
-    position: fixed;
-    /* z-index: 1; */
-  }
-  
-  
-  .seed{
-    width: 0.8rem;
-    height: 2rem;
-    border-radius: 50% 50% 10% 10%;
-    background-color: rgba(134, 76, 28, 0.966);
-    position: fixed;
-    top: 1.5rem;
-    left: 1.2rem;
-    
-  }
-
-
-  /* resume Page css */
-  .resume{
-    transform: scale(1);
+/* resume Page css */
+.resume{
+  transform: scale(1);
   transform-origin: 0 0;
   width: 66.67%; 
   height: 100vh;
-    
-  }
-  .resumeContainer{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-  }
-
-  /* stckers page container */
-  .stickersContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-   
-  }
-/* project page and all poject page css*/
-.projectPage{
-  padding-top: 60px;
+  
+}
+.resumeContainer{
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
-.backgroundImage{
-  background-image: url('https://art.pixilart.com/sr2cb0a10a662aws3.png');
+
+/* stckers page container */
+.stickersContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  position: absolute;
-  height:130rem;
-  z-index: -3;
-  background-size: 20%;
-}
-
-.projectContainer{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: fit-content;
+  height: 100%;
   
-  border-radius: 10% 10% 10% 10%;
-  border-color: black;
-  border-width: 7px;
-  transition: 300ms;
-}
-.projectContainer:hover{
-  cursor:pointer;
 }
 
-/* p{
- margin: 0px;
-} */
-.selectedProject{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: fit-content;
-  transition: 300ms;
-  .projectInfo{
-    
-    transform: translateX(11.7rem);
-    transition: 100ms;
-    visibility: visible;
-    background-color:white;
-    height: fit-content;
-    border-radius: 10px;
-    width: 324px;
-    padding: 10px;
-    
-  }
-  .displayImg{
-    transform: translateX(-10rem);
-    position: relative;
-    scale: 105%;
-    border-radius: 20px;
-    overflow: hidden;
-    z-index: 3;
-    max-block-size: 350px;
-    
-  }
-  .projectInfo{
-    z-index: 2;
-  }
-}
+/* where to find the css for other parts of the webpage */
 
-.projectInfo{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  border: solid black 3px;
-  transition: 100ms;
-  visibility: hidden;
-  z-index: -1;
-  position: relative;
-  left:-10rem;
-  height: fit-content;
-  width: 20rem;
-  padding: 10px;
-}
-.infoTitle{
-  text-align: center;
-  font-family: 'Monster Friend Back', sans-serif;
-  color: black;
-
-}
-.infoBody{
-  /* padding: 10px; */
-  font-size: large;
-
-}
-.infoFooter{
- position: relative;
- text-align: center;
-}
-
-.displayImg{
-  position: relative;
- max-block-size: 350px;
- transition: 300ms;
- /* border-radius: 20px; */
- /* border: solid 3px rgb(17, 109, 230); */
- left: 10rem;
-
-
-}
-
-.blur{
-  width: 90%;
-    height: 125rem;
-    background-color: rgb(41 41 44);
-    position: absolute;
-    opacity: 86%;
-    left: 5rem;
-    z-index: -2;
-    top: 1rem;
-    border-radius: 42px;
-}
-
-.title{
-  background: rgba(0, 0, 0, 0.76);
-  /* border: solid 2px rgb(0, 0, 0); */
-  padding: 10px;
-  /* border-radius: 10px; */
-  font-family: 'Monster Friend Back', sans-serif;
-  font-family: 'Monster Friend Fore', sans-serif;
-  color: #ffffff;
-  
-
-}
-.stickerbackImg{
-  background-image: url(https://th.bing.com/th/id/OIG4.iv1XugKUaqsUyrs18t0s?w=1024&h=1024&rs=1&pid=ImgDetMain);
-}
-
+/* project page and all poject page css*/
+  /* project.css */
 
 /* home page top banner and title text */
+  /* home.css */
 
-.homeContainer{
-  display: flex;
-  flex-direction: column;
+/* book for stickers css for animations and the like */
+  /* book.css */
 
-}
-.homeBanner{
-  background-image: url('https://cdn.pixilart.com/photos/large/06bbcabfc27b68d.jpg');
-  position: relative;
-    background-size: cover;
-    height: 53rem;
-    /* width: 90%; */
-    background-position: center;
-    z-index: -2;
-    
-}
+/* apple hamburger menu for navigation */
+  /* apple.css */
 
-.homeTitle{
-  position: absolute;
-  top: 19%;
-  left: 52%;
-  font-size: 47px;
-  font-weight: bold;
-  background-color: #3a8dad46;
-  border-radius: 10px;
-  padding: 8px;
-  z-index: 1;
-
-}
-.aboutInfo{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 28rem;
-}
-
-/*  clouds on home page */
-.backCloud{
+  .educationContainer{
+    margin: 10px;
+    min-width: 840px;
+    font-family: 'NeoBulletin Trash', sans-serif;
+    color: #ffffff;                       
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
-  top: 25%;
-  left: 70%;
-  /* opacity: 60%; */
-  transition: 300ms;
-  width: 10rem;
-  height: 10rem;
-  background-image: url('/src/assets/cloudTwo.png');
-  background-size: cover;
-  scale: 110%;
+  background-color: #1f2937;
+  padding: 20px;
+  border-radius: 30px;
+  }
 
-}
-.backCloud:hover{
-  scale:120%;
-  .cloudIcon{
-    transform: translateY(-5.8rem);
-  }
-  .sliderName{
-    transform:translateY(-5.4rem);
-    z-index: 4;
-  }
-}
-.cloud{
-  /* scale: 6%; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  top: 10%;
-  left: 30%;
-  /* opacity: 60%; */
-  transition: 300ms;
-  width: 10rem;
-  height: 10rem;
-  background-image: url('/src/assets/Cloud.png');
-  background-size: cover;
-}
-.cloud:hover{
-  scale:110%;
-  .cloudIcon{
-    transform: translateY(-5.8rem);
-  }
-  .sliderName{
-    transform:translateY(-5.8rem);
-    z-index: 4;
-  }
-}
-.cloudTwo{
-  /* scale: 6%; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  top: 20%;
-  left: 10%;
-  /* opacity: 60%; */
-  transition: 300ms;
-  width: 10rem;
-  height: 10rem;
-  background-image: url('/src/assets/cloudThree.png');
-  background-size: cover;
-}
-.cloudTwo:hover{
-  scale:110%;
-  .cloudIcon{
-    transform: translateY(-6.5rem);
-  }
-  .sliderName{
-    transform:translateY(-5.8rem);
-    z-index: 4;
-    font-size: 10pt;
-  }
-}
-.cloudThree{
-  scale: 8%;
-  position: absolute;
-  top: -34rem;
-  left: -30rem;
-  opacity: 70%;
-  transform: scaleX(-1) rotate(-15deg);
-  transition: 300ms;
-}
-.cloudThree:hover{
-  scale:10%;
-  transition: 300ms;
-}
-
-.slideContainer{
-  position: relative;
-  overflow: hidden;
-  min-width: 6rem;
-  /* border: solid; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.cloudIcon{
-  position: relative;
-  top: 5rem;
-  transition: 300ms;
-  /* background-image: url(src/assets/Home.png); */
-  min-block-size: 5rem;
-  /* border: solid; */
-  /* background-size: cover; */
-  max-width: 5rem;
-}
-.sliderName{
-  transition: 430ms;
-  position: relative;
-  top:10.4rem;
-  font-family: 'Monster Friend Back', sans-serif;
-  background-color: #ffffffd5;
-  color: #000000;
-  padding: 4px;
-}
-
-.Title{
-  font-family: 'Monster Friend Back', sans-serif;
-  font-family: 'Monster Friend Fore', sans-serif;
-  color: #ffffff;
-  text-align: center;
-  padding-left: 60px;
-  text-decoration:unset ;
-  font-size: 20pt;
-  display: block;
-  /* font-size: 2em; */
-  margin-block-start: 0.67em;
-  margin-block-end: 0.67em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-  unicode-bidi: isolate;
-
-}
-.navItem{
-  font-family: 'Monster Friend Back', sans-serif;
-  font-family: 'Monster Friend Fore', sans-serif;
-  color: #ffffff;
-  text-align: center;
-  padding-inline: 20px;
-  text-decoration: unset;
-}
-.navItem:hover{
-  text-decoration: underline;
-}
-
-.readMore{
-  font-family: 'Monster Friend Back', sans-serif;
-  color: #000000;
-  font-size: 20pt;
-  text-decoration: none;
-}
-.readMore:hover{
-  color: #324f70;
-  text-decoration:underline;
-}
 .certificate{
-  position: relative; 
-  display: inline-block; 
+  max-block-size: 500px;
+  /* position: relative;  */
+  /* display: inline-block;  */
+}
+/* education page */
+.listContainer{
+  font-family: 'NeoBulletin Trash', sans-serif;
+                                                
+  display: flex;
+  flex-direction: row;
+    ul{
+      li{
+        padding-block: 10px;
+      }
+      color: rgb(214, 214, 198);
+      font-size: 2rem;
+    }
+    ul li::marker {
+      font-family: 'NeoBulletin Trash', sans-serif;                                
+      content: '✓ ';
+      font-size: 2rem;
+    }
+  }
+
+.infoSelector{
+  display: flex;
+}
+.infoItem{
+    color: #ffffff;
+    text-align: center;
+    padding-inline: 20px;
+    text-decoration: unset;
+}
+.infoItem:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  text-underline-offset: 10px;
+}
+.selectedInfo{
+  text-decoration: underline;
+  cursor: pointer;
+  text-underline-offset: 10px;
 }
 
-
-
-  
